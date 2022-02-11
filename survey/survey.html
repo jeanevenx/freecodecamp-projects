@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Survey</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+	<main id="container">
+	<h1 id="title">Social Media Survey form</h1>
+	<p id="description"> Thank you for taking the time to answer this survey</p>
+
+	<div id="form">
+	<form id="survey-form">
+
+		<label id="name-label" for="name">
+			<p>Name</p>		
+		<input id="name" type="text" placeholder="Enter your name" required></label>
+
+		<label id="email-label" for="email" ><p>E-mail</p>
+
+		<input id="email" type="email" placeholder="Enter your e-mail" required></label>
+
+		<label id="number-label" for="number"><p>Number</p>
+		<input id="number" type="number" placeholder="Select a number" min="01" max="999" required></label>
+		
+		<span><label id="labeldrp" for="dropdown"> 
+			<p>What's your favorite social media?</p></span>
+
+		<select name="social-media" id="dropdown">
+		  <option value="facebook">Facebook</option>
+		  <option value="instagram">Instagram</option>
+		  <option value="twitter">Twitter</option>
+		  <option value="linkedin">LinkedIn</option>
+		  <option value="whatsapp">Whatsapp</option>
+		  <option value="viber">Viber</option>
+		  <option value="snapchat">Snapchat</option>
+		  <option value="tiktok">Tiktok</option>
+		  <option value="kwai">Kwai</option>
+		</select>
+		</label>
+
+			<span><p>Which of these social medias do you use after your favorite application?</p></span>
+			<span><label for="fb">
+				
+			<input id="fb" type="radio" name="social-media" value="Facebook">Facebook </label></span>
+
+			<span><label  for="gmail">
+			<input id="gmail" type="radio" name="social-media" value="gmail">Gmail
+			</label></span>
+
+			<span><label  for="gm">
+			<input id="instagram" type="radio" name="social-media" value="Instagram">Instagram
+			</label></span>
+
+			<span><label for="Twitter">
+			<input id="gm" type="radio" name="social-media" value="Twitter">Twitter
+			</label></span>
+
+			<span><label for="Snapchat">
+			<input id="Snapchat" type="radio" name="social-media" value="Snapchat">Snapchat
+			</label></span>
+
+			<span><label for="tiktok">
+			<input id="tiktok" type="radio" name="social-media" value="Tiktok">Tiktok
+			</label></span>
+			
+			<span> <p> In a social media what is the more important for you? (Check all that aplly)</p></span>
+
+			<span><label for="info1">
+			<input id="info1" type="checkbox" value="Security"> Security
+			</label></span>
+			<span><label for="info2">
+			<input id="info2" type="checkbox" value="user"> Number Of Users
+			</label></span>
+			<span><label for="info3">
+			<input id="info3" type="checkbox" value="Accessibility"> Accessibility
+			</label></span>
+			<span><label for="info4">
+			<input id="info4" type="checkbox" value="design"> Beautiful Design 
+			</label></span>
+			<span><label for="info5">
+			<input id="info5" type="checkbox" value="velocity"> Velocity
+			</label></span>
+			<span><label for="info6">
+			<input id="info6" type="checkbox" value="Transparency"> Transparency
+			</label></span>
+
+
+			<span><p>What would you like to suggest to have better social medias? </p></span>
+			<textarea placeholder="Enter your comment here..."></textarea>
+
+			<div><button id="submit" type="submit"</button> SEND </div>
+
+			
+	</form>
+    </div>
+	</main>
+</body>
+</html>

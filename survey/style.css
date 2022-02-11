@@ -1,0 +1,114 @@
+body{
+	font-family:Arial, "Times New Roman", Times, serif ;
+	text-align: center;
+	margin: 0;
+	background-image: url("https://www.publicitarioscriativos.com/wp-content/uploads/2019/01/4-profisso%CC%83es-para-atuar-na-a%CC%81rea-de-social-media-em-2019-1100x600.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	/*background-color: #232221;*/
+	color: hsl(214, 67%, 100%);
+
+}
+#container{
+	margin: 0;
+}
+#title{
+	font-size: 2.5rem;
+	color: #E0031E;
+}
+
+@media (max-width: 800px){
+	#title{
+		font-size: 1.5rem;
+	}
+
+
+
+}
+span{
+	display: flex;
+	margin-left: 4%;
+
+
+}
+span p{
+	font-size: 1.3rem;
+}
+#name-label p,#email-label p, #number-label p{
+	text-align: left;
+	margin: 4%;
+	font-size: 1.3rem;
+	padding-bottom:0;
+}
+textarea{
+	margin: 0;
+	width: 90%;
+	height: 85px;
+	border-radius: 5px;
+}
+select{
+	margin: 0;
+	width:92% ;
+	border-radius: 5px;
+	padding: 7px;
+
+}
+div #submit:hover{
+	color: white;
+	background-color: greenyellow;
+}
+
+#form{
+	width: 720px;
+	margin: auto;
+	padding: 20px;
+	background-color:#94988D;
+	border-radius: 15px;
+	opacity: 0.5;
+}
+
+@media (max-width: 800px){
+	#form{
+		width: 70%;
+	}
+
+
+
+}
+
+@media (max-width: 460px) {
+  #title {
+    font-size: 3.5em;
+    line-height: 1.2;
+  }
+}
+
+#name,#email, #number{
+	width: 90%;
+	border-radius: 5px;
+	padding: 7px;
+
+}
+
+#submit{
+	width: 90%;
+	background-color:#E0031E;
+	color: #fff;
+	padding: 5px;
+	margin-top: 10px;
+	border-radius: 5px;
+}
+#description{
+	color: #E0031E;
+	font-size: 1.5rem;
+}
+
+@media (max-width: 800px){
+	#description{
+		font-size: 1rem;
+	}
+
+	}
+
+
+

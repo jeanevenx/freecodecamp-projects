@@ -1,0 +1,206 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans','Helvetica Neue',Helvetica, sans-serif;
+    line-height: 1.45;
+    color: #4d4e53;
+}
+
+h1, h2, h3 {
+    color: black;
+}
+/*The navbar*/
+#navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+}
+#navbar li {
+    color: #4d4e53;
+    border-top: 1px solid;
+    list-style: none;
+    position: relative;
+    width: 100%;
+}
+
+#navbar a {
+    display: block;
+    padding: 10px 30px;
+    color: #4d4e53;
+    text-decoration: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+#navbar ul {
+    height: 80%;
+    padding: 0;
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+@media only screen and (max-width: 900px){
+    #navbar {
+        position: relative;
+        min-width: 290px;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        max-height: 70%;
+        border: none;
+        border-color: rgba(0, 22, 22, 0.4);
+    }
+}
+
+header {
+    display: flex;
+    color: black;
+
+}
+
+header > img {
+    width: 10vw;
+    padding: 8px;
+}
+
+@media only screen and (max-width: 900px){
+    header > img {
+        width: 96px;
+        padding: 8px;
+    }
+    
+}
+
+header > h1 {
+    margin: 0 5px 5px 0;
+    margin-top: 35px;
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width: 900px){
+    header > h1 {
+    margin-left: 8px;
+    font-size: 2.2rem;
+}
+    #navbar ul {
+        border: 1px solid;
+        border-bottom: 2px solid;
+        height: 250px;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 460px){
+    header > h1 {
+    margin-left: 8px;
+    font-size: 1.5rem;
+}
+
+header > img {
+    width: 96px;
+    padding: 8px;
+    margin-left: 10px;
+}
+#main-doc{
+    margin-left: -10px;
+}
+}
+
+
+/*The main doc*/
+#main-doc{
+    position: relative;
+    margin-left: 325px;
+    margin-right: 15px;
+    margin-bottom: 4rem;
+}
+.main-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+@media only screen and (max-width: 900px) {
+    #main-doc{
+        position: relative;
+        margin-left: 0px;
+        padding: 20px;
+    }
+}
+
+.main-section h1{
+    padding: 20px 0 25px 0;
+    margin-top: 0;
+}
+
+.main-section li{
+    margin-left: 40px;
+}
+
+.main-section h2{
+    padding: 15px 0 10px 0; 
+}
+
+.code-s{
+    background-color: #E7E9EB;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.error{
+    border-left: 5px solid red;
+}
+
+code{
+    background-color: black;
+    display: block;
+    padding: 10px;
+    margin: 5px 5px 15px 5px;
+    color: white;
+}
+
+section{
+    margin: 15px;
+}
+
+.t-g{
+    color: grey;
+}
+
+.try-code{
+    background-color: #78E0EA;
+    display: inline;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.try-code a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.try-code:hover{
+    background-color: #3CCCDD;
+}
+
+.note{
+    background-color: #FFFFCC;
+    display: block;
+    padding: 5px;
+}
+
+.back-error{
+    background-color: #FFDDDD;
+}

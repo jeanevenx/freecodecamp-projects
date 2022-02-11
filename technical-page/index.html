@@ -1,0 +1,627 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Documentation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>
+            <img src="https://cdn-icons-png.flaticon.com/512/1822/1822899.png" alt="Python"> 
+            <h1>Python Documentation</h1>
+        </header>
+        <ul>
+            <li>
+                <a class="nav-link" href="#python_introduction">Python Introduction</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#why_python?">Why Python?</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#Python_Getting_Started">Python Getting Started</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#the_python_command_line">The Python Command Line</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#python_syntax">Python Syntax</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#python_variables">Python Variables</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#casting">Casting</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#python_numbers">Python Numbers</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#python_strings">Python Strings</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#python_lists">Python Lists</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#list_length">List Length</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#reference">Reference</a>
+            </li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section id="python_introduction" class="main-section">
+            <header><h1>Python Introduction</h1></header>
+            <article>
+                <p>
+                    <h2>What is Python?</h2>
+                    Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+                    <br><br>It is used for:
+                    <ul>
+                        <li>web development (server-side),</li>
+                        <li>software development,</li>
+                        <li>mathematics,</li>
+                        <li>system scripting.</li>
+                    </ul>
+                    <h2>What can Python do?</h2>
+                    <ul>
+                        <li>Python can be used on a server to create web applications.</li>
+                        <li>Python can be used alongside software to create workflows.</li>
+                        <li>Python can connect to database systems. It can also read and modify files.</li>
+                        <li>Python can be used to handle big data and perform complex mathematics.</li>
+                        <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+                    </ul>
+                </p>
+            </article>
+        </section>
+        <hr>
+        <section id="why_python?" class="main-section">
+            <header><h1>Why Python?</h1></header> 
+            <article>
+                <p>
+                    <ul>
+                        <li>Python works on different platforms (Windows, Mac, Linux, Raspberry Pi, etc).</li>
+                        <li>Python has a simple syntax similar to the English language.</li>
+                        <li>Python has syntax that allows developers to write programs with fewer lines than 
+                            some other programming languages.</li>
+                        <li>Python runs on an interpreter system, meaning that code can be executed as soon as 
+                            it is written. This means that prototyping can be very quick.</li>
+                        <li>Python can be treated in a procedural way, an object-oriented way or a functional way.</li>
+                    </ul>
+                    <h2>Good to know</h2>
+                    <ul>
+                        <li>The most recent major version of Python is Python 3, which we shall be using in this tutorial. 
+                            However, Python 2, although not being updated with anything other than security updates, 
+                            is still quite popular.
+                        </li>
+                        <li>In this tutorial Python will be written in a text editor. 
+                            It is possible to write Python in an Integrated Development Environment, 
+                            such as Thonny, Pycharm, Netbeans or Eclipse which are particularly useful when 
+                            managing larger collections of Python files.
+                        </li>
+                    </ul>
+                    <h2>Python Syntax compared to other programming languages</h2>
+                    <ul>
+                        <li>Python was designed for readability, and has some similarities 
+                            to the English language with influence from mathematics.</li>
+                        <li>Python uses new lines to complete a command, as opposed 
+                            to other programming languages which often use semicolons or parentheses.</li>
+                        <li>Python relies on indentation, using whitespace, to define scope; such as 
+                            the scope of loops, functions and classes. Other programming languages 
+                            often use curly-brackets for this purpose.</li>
+                    </ul>
+                </p>
+                <div class="code-s">
+                    <h3>Exemple</h3>
+                    <code>print("Hello, World!")</code>
+                    <div class="try-code">
+                        <a href="https://www.w3schools.com/python/trypython.asp?filename=demo_helloworld">Try it >></a>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <hr>
+        <section id="Python_Getting_Started" class="main-section">
+            <header><h1>Python Getting Started</h1></header> 
+            <h2>Python Install</h2>
+            <article>
+                <p>
+                    Many PCs and Macs will have python already installed. <br><br>
+                    To check if you have python installed on a Windows PC, 
+                    search in the start bar for Python or run the following on the Command Line (cmd.exe):
+                </p>
+                <div class="code-s">
+                    <code>C:\Users\Your Name>python --version</code>
+                </div>
+                <p>To check if you have python installed on a Linux or Mac, 
+                    then on linux open the command line or on Mac open the Terminal and type:</p>
+                <div class="code-s">
+                    <code>python --version</code>
+                </div>   
+                <p>If you find that you do not have Python installed on your computer, 
+                    then you can download it for free from the following website:
+                <a href="https://www.python.org/">https://www.python.org/</a></p> 
+                <h2>Python Quickstart</h2>
+                <p>Python is an interpreted programming language, this means that as a developer you write Python 
+                    (.py) files in a text editor and then put those files into the python interpreter to be executed.</p>
+                <p>The way to run a python file is like this on the command line:</p>
+                <div class="code-s">
+                    <code>C:\Users\Your Name>python helloworld.py</code>
+                </div>
+                <p>Where "helloworld.py" is the name of your python file. <br><br>
+                    Let's write our first Python file, called helloworld.py, 
+                    which can be done in any text editor.</p>
+                <div class="code-s">
+                    <p>helloworld.py</p>
+                    <code>print("Hello, World!")</code>
+                    <div class="try-code">
+                        <a href="https://www.w3schools.com/python/trypython.asp?filename=demo_helloworld"> Try it >></a>
+                    </div>
+                </div>
+                <p>Simple as that. Save your file. Open your command line, navigate to the directory 
+                    where you saved your file, and run:</p>
+                <div class="code-s">
+                    <code>C:\Users\Your Name>python helloworld.py</code>
+                </div>
+                <p>The output should read:</p>
+                <div class="code-s">
+                    <p class="code">Hello, World!</p>
+                </div>
+            </article>
+        </section >
+        <hr>
+        <section id="the_python_command_line" class="main-section">
+            <header><h1>The Python Command Line</h1></header> 
+            <article>
+                <p>To test a short amount of code in python sometimes it is quickest and easiest not to write the code in a file. 
+                    This is made possible because Python can be run as a command line itself.</p>
+                <p>Type the following on the Windows, Mac or Linux command line:</p>
+                <div class="code-s">
+                    <code>C:\Users\Your Name>python</code>
+                </div>
+                <p>Or, if the "python" command did not work, you can try "py":</p>
+                <div class="code-s">
+                    <code>C:\Users\Your Name>py</code>
+                </div>
+                <p>From there you can write any python, including our hello world example from earlier in the tutorial:</p>
+                <div class="code-s">
+                        <code>
+                            <p class="t-g"> 
+                                C:\Users\Your Name>python <br>
+                                Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)] on win32 <br>
+                                Type "help", "copyright", "credits" or "license" for more information. <br>
+                            </p> 
+                            >>> print("Hello, World!") 
+                        </code>
+                </div>
+                <p>Which will write "Hello, World!" in the command line:</p>
+                <div class="code-s">
+                    <code>
+                        <p class="t-g">
+                            C:\Users\Your Name>python <br>
+                            Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45) [MSC v.1900 32 bit (Intel)] on win32 <br>
+                            Type "help", "copyright", "credits" or "license" for more information. <br>
+                            >>> print("Hello, World!") <br>
+                        </p> 
+                        Hello, World!
+                    </code>
+                </div>
+                <p>Whenever you are done in the python command line, you can simply type 
+                    the following to quit the python command line interface:
+                </p>
+                <div class="code-s">
+                <code>
+                    exit()
+                </code>
+                </div>
+            </article>
+        </section>
+        <hr>
+        <section id="python_syntax" class="main-section">
+            <header><h1>Python Syntax</h1></header> 
+            <h2>Execute Python Syntax</h2>
+            <article>
+                <p>
+                  As we learned in the previous page, Python syntax can be executed by writing directly in the Command Line:                   </p>
+                <div class="code-s">
+                    <code>
+                        >>> print("Hello, World!") <br>
+                        Hello, World!
+                    </code>
+                </div>
+                <p>
+                  Or by creating a python file on the server, using the .py file extension, and running it in the Command   
+                  Line:      
+                </p>
+                <div class="code-s">
+                    <p class="code">C:\Users\Your Name>python myfile.py</p>
+                </div>
+                <h2>Python Indentation</h2>
+                <p>Indentation refers to the spaces at the beginning of a code line. <br><br>
+                    Where in other programming languages the indentation in code is for readability only, 
+                    the indentation in Python is very important. <br><br>Python uses indentation to indicate 
+                    a block of code.</p>
+                <div class="code-s">
+                    <h3>Exemple</h3>
+                    <code>
+                        if 5 > 2: <br>
+                        &nbsp;&nbsp;print("Five is greater than two!")
+                    </code>
+                    <div class="try-code">
+                        <a href="https://www.w3schools.com/python/trypython.asp?filename=demo_indentation"> Try it >></a>
+                    </div>
+                </div>
+                <p>Python will give you an error if you skip the indentation:</p>
+                <div class="code-s back-error">
+                    <h3>Exemple</h3>
+                        <p>Syntax Error:</p>
+                        <code class="error">
+                            if 5 > 2: <br>
+                            print("Five is greater than two!")
+                        </code>
+                        <div class="try-code">
+                            <a href="https://www.w3schools.com/python/trypython.asp?filename=demo_indentation_test"> Try it >></a>
+                        </div>
+                </div>
+                <p>The number of spaces is up to you as a programmer, but it has to be at least one.</p>
+                <div class="code-s">
+                    <code>
+                        if 5 > 2:<br>
+                        &nbsp;print("Five is greater than two!") <br>
+                        if 5 > 2:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print("Five is greater than two!") 
+                    </code>
+                    <div class="try-code">
+                        <a href="https://www.w3schools.com/python/trypython.asp?filename=demo_indentation2"> Try it >></a>
+                    </div>
+                </div>
+                <p>You have to use the same number of spaces in the same block of code, 
+                    otherwise Python will give you an error:
+                </p>
+                <div class="code-s back-error">
+                        <h3>Exemple</h3>
+                        <p>Syntax Error:</p>
+                        <code class="error">
+                            if 5 > 2: <br>
+                            &nbsp;&nbsp;print("Five is greater than two!") <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;print("Five is greater than two!")
+                        </code>
+                </div>
+                <h2>Python Variables</h2>
+                <p>In Python, variables are created when you assign a value to it:</p>
+                <div class="code-s">
+                    <h3>Exemple</h3>
+                    <p>Variables in Python:</p>
+                        <code>
+                            x = 5 <br>
+                            y = "Hello, World!"
+                        </code>
+                </div>
+                <p>Python has no command for declaring a variable.</p>
+                <p>You will learn more about variables in the <a href="#python-variables">Python Variables</a> chapter.</p>
+                <hr>
+                <h2>Comments</h2>
+                <p>Python has commenting capability for the purpose of in-code documentation.<br><br>
+                    Comments start with a #, and Python will render the rest of the line as a comment:</p>
+                <div class="code-s">
+                    <h3>Exemple</h3>
+                    <p>Comments in Python:</p>
+                    <code>
+                        #This is a comment.<br>
+                        print("Hello, World!")
+                    </code>
+                </div>
+            </article>
+        </section>
+        <hr>
+        <section id="python_variables" class="main-section">
+            <header><h1>Python Variables</h1></header> 
+            <hr>
+            <h2>Variables</h2>
+            <article>
+                <p>Variables are containers for storing data values.</p>
+                <hr>
+                <h2>Creating Variables</h2>
+                <p>Python has no command for declaring a variable.<br><br>
+                    A variable is created the moment you first assign a value to it.</p>
+                <div class="code-s">
+                    <h3>Exemple</h3>
+                    <code>
+                        x = 5 <br> 
+                        y = "John" <br>
+                        print(x) <br> 
+                        print(y)
+                    </code>
+                </div>
+                <p>Variables do not need to be declared with any particular type, 
+                    and can even change type after they have been set.</p>
+                <div class="code-s">
+                    <h3>Exemple</h3>
+                    <code>
+                        x = 4       #x is of type int <br>
+                        x = "Sally" #x is now of type str <br>
+                        print(x)
+                    </code>
+                </div>
+            </article>
+        </section>
+        <hr>
+        <section id="casting" class="main-section">
+            <header><h1>Casting</h1></header> 
+            <article>
+                <p>If you want to specify the data type of a variable, this can be done with casting.</p>
+                <div class="code-s">
+                    <h3>Exemple</h3>
+                    <code>
+                        x = str(3)    #x will be '3' <br>
+                        y = int(3)    #y will be 3 b <br>
+                        z = float(3)  #z will be 3.0
+                    </code>
+
+                    <div class="try-code">
+                        <a href="https://www.w3schools.com/python/trypython.asp?filename=demo_variables_casting"> Try it >></a>
+                    </div>
+                </div>
+                <h2>Get the Type</h2>
+                <p>You can get the data type of a variable with the <em>type()</em> function.</p>
+                <div class="code-s">
+                    <h3>Exemple</h3>
+                    <code>
+                        x = 5 <br>
+                        y = "John" <br>
+                        print(type(x)) <br>
+                        print(type(y))
+                    </code>
+                </div>
+                <h2>Single or Double Quotes?</h2>
+                <p>String variables can be declared either by using single or double quotes:</p>
+                <div class="code-s">
+                    <h3>Exemple</h3>
+                    <code>
+                        x = "John" <br>
+                        #is the same as <br>
+                        x = 'John'
+                    </code>
+                </div>
+                <h2>Case-Sensitive</h2>
+                <p>Variable names are case-sensitive.</p>
+                <div class="code-s">
+                    <h3>Exemple</h3>
+                    <p>This will create two variables:</p>
+                    <code>
+                        a = 4 <br>
+                        A = "Sally" <br>
+                        #A will not overwrite a
+                    </code>
+                </div>
+                <h2>Variable Names</h2>
+                <p>A variable can have a short name (like x and y) or a more descriptive name
+                    (age, carname, total_volume). Rules for Python variables:</p>
+                <ul>
+                    <li>A variable name must start with a letter or the underscore character</li>
+                    <li>A variable name cannot start with a number</li>
+                    <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+                    <li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
+                </ul>
+
+                <div class="code-s">
+                    <h3>Exemple</h3>
+                    <p>Legal variable names:</p>
+                    <code>
+                        myvar = "John" <br> 
+                        my_var = "John" <br> 
+                        _my_var = "John" <br>
+                        myVar = "John" <br> 
+                        MYVAR = "John" <br> 
+                        myvar2 = "John"
+                    </code>
+                </div>
+                <div class="code-s back-error">
+                        <h3>Exemple</h3>
+                        <p>Illegal variable names:</p>
+                        <code class="error">
+                            2myvar = "John" <br> 
+                            my-var = "John" <br> 
+                            my var = "John
+                        </code>
+                </div>
+            </article>
+        </section>
+        <hr>
+        <section id="python_numbers" class="main-section">
+            <header><h1>Python Numbers</h1></header> 
+            <hr>
+            <h2>Python Numbers</h2>
+            <article>
+                <p>There are three numeric types in Python:</p>
+                <ul>
+                    <li>int</li>
+                    <li>float</li>
+                    <li>complex</li>
+                </ul>
+                <p>Variables of numeric types are created when you assign a value to them:</p>
+                <div class="code-s">
+                    <h3>Exemple</h3>
+                    <code>
+                        x = 1    #int <br>
+                        y = 2.8  #float <br>
+                        z = 1j   #complex
+                    </code>
+                </div>
+                <h2>Type Conversion</h2>
+                <p>You can convert from one type to another with the int(), float(), and complex() methods:</p>
+                <div class="code-s">
+                    <h3>Exemple</h3>
+                    <p>Convert from one type to another:</p>
+                    <code>
+                        x = 1    #int <br>
+                        y = 2.8  #float <br>
+                        z = 1j   #complex <br> <br>
+                        #convert from int to float: <br>
+                        a = float(x) <br> <br>
+                        #convert from float to int: <br>
+                        b = int(y) <br> <br>
+                        #convert from int to complex: <br>
+                        c = complex(x) <br><br>
+                        print(a) <br>
+                        print(b) <br>
+                        print(c) <br> <br> 
+                        print(type(a)) <br>
+                        print(type(b))<br>
+                        print(type(c))
+                    </code>
+                    <div class="try-code">
+                        <a href="https://www.w3schools.com/python/trypython.asp?filename=demo_numbers_convert">Try it >></a>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <hr>
+        <section id="python_strings" class="main-section">
+            <header><h1>Python Strings</h1></header> 
+            <article>
+                <p>Strings in python are surrounded by either single quotation marks, or double quotation marks.</p>
+                <p>'hello' is the same as "hello".</p>
+                <p>You can display a string literal with the print() function:</p>
+                <div class="code-s">
+                    <h3>Exemple</h3>
+                    <code>
+                        print("Hello") <br> print('Hello')
+                    </code>
+                </div>
+                <h2>Assign String to a Variable</h2>
+                <p>
+                  Assigning a string to a variable is done with the variable name followed by an equal sign and the string:                   </p>
+                <div class="code-s">
+                    <h3>Exemple</h3>
+                    <code>
+                        a = "Hello" <br>
+                        print(a)
+                    </code>
+                </div>
+                <h2>Multiline Strings</h2>
+                <p>You can assign a multiline string to a variable by using three quotes:</p>
+                <div class="code-s">
+                    <h3>Exemple</h3>
+                    <p>You can use three double quotes:</p>
+                    <code>
+                        a = """Lorem ipsum dolor sit amet, <br>
+                        consectetur adipiscing elit, <br>
+                        sed do eiusmod tempor incididunt <br>
+                        ut labore et dolore magna aliqua.""" <br>
+                        print(a)
+                    </code>
+                </div>
+            </article>
+        </section>
+        <hr>
+        <section id="python_lists" class="main-section"> 
+            <header><h1>Python Lists</h1></header> 
+            <hr>
+            <code>
+                mylist = ["apple", "banana", "cherry"]
+            </code>
+            <hr>
+            <h2>List</h2>
+            <article>
+                <p>Lists are used to store multiple items in a single variable.</p>
+                <p>Lists are one of 4 built-in data types in Python used to store collections of data, the other 3 are Tuple, 
+                    Set, and Dictionary, all with different qualities and usage.</p>
+                <p>Lists are created using square brackets:</p>
+
+                <div class="code-s">
+                    <h3>Exemple</h3>
+                    <p>Create a List:</p>
+                    <code>
+                        thislist = ["apple", "banana", "cherry"] <br>
+                        print(thislist)
+                    </code>
+                    <div class="try-code">
+                        <a href="https://www.w3schools.com/python/trypython.asp?filename=demo_list"> Try it >></a>
+                    </div>
+                </div>
+                <h2>List Items</h2>
+                <p>List items are ordered, changeable, and allow duplicate values. <br>
+                    List items are indexed, the first item has index [0], the second item has index [1] etc.</p>
+                
+                <h2>Ordered</h2>
+                <p>
+                  When we say that lists are ordered, it means that the items have a defined order, and that order will not                     change.
+                </p>
+                <p>If you add new items to a list, the new items will be placed at the end of the list.</p>
+                <p class="note">
+                  Note: There are some list methods that will change the order, but in general: the order of the                                 items will not change.
+              </p>
+                <h2>Changeable</h2>
+                <p>The list is changeable, meaning that we can change, add, and remove items in a list after it has been created.</p>
+                <h2>Allow Duplicates</h2>
+                <p>Since lists are indexed, lists can have items with the same value:</p>
+                <div class="code-s">
+                    <h3>Exemple</h3>
+                    <code>
+                        Lists allow duplicate values: <br>
+                        thislist = ["apple", "banana", "cherry", "apple", "cherry"] <br>
+                        print(thislist)
+                    </code>
+                </div>
+            </article>
+        </section>
+        <hr>
+        <section id="list_length" class="main-section">
+            <header><h1>List Length</h1></header> 
+            <article>
+                <p>To determine how many items a list has, use the len() function:</p>
+                <div class="code-s">
+                    <h3>Exemple</h3>
+                    <p>Print the number of items in the list:</p>
+                    <code>
+                        thislist = ["apple", "banana", "cherry"] <br> 
+                        print(len(thislist))
+                    </code>
+                </div>
+                <h2>List Items - Data Types</h2>
+                <p>List items can be of any data type:</p>
+                <div class="code-s">
+                    <h3>Exemple</h3>
+                    <p>String, int and boolean data types:</p>
+                    <code>
+                        list1 = ["apple", "banana", "cherry"] <br> 
+                        list2 = [1, 5, 7, 9, 3] <br>
+                        list3 = [True, False, False]
+                    </code>
+                </div>
+                <p>A list can contain different data types:</p>
+                <div class="code-s">
+                    <h3>Exemple</h3>
+                    <p>A list with strings, integers and boolean values:</p>
+                    <code>
+                        list1 = ["abc", 34, True, 40, "male"]
+                    </code>
+                </div>
+                <h2>The list() Constructor</h2>
+                <p>It is also possible to use the list() constructor when creating a new list.</p>
+                <div class="code-s">
+                    <h3>Exemple</h3>
+                    <p>Using the list() constructor to make a List:</p>
+                    <code>
+                        thislist = list(("apple", "banana", "cherry")) #note the double round-brackets <br>
+                        print(thislist)
+                    </code>
+                </div>
+            </article>
+        </section>
+        <hr>
+        <section id="reference" class="main-section">
+            <header><h1>Reference</h1></header> 
+            <ul>
+                <li>
+                    All the documentation in this page is taken from <a href="https://www.w3schools.com/default.asp">w3schools</a>
+                </li>
+            </ul>
+
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;900&family=Spline+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;900&family=Spline+Sans:wght@300&family=Ubuntu:wght@300&display=swap');
+
+* {
+  box-sizing: border-box;
+  background-color: #151616;
+  color: #FFF;
+  font-family: 'Ubuntu', sans-serif;
+}
+html,body{
+  margin: 0;
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+
+/*The header style*/
+#navbar{
+  background-color: #151616;
+  position: fixed;
+  display: flex;
+  height: auto;
+  justify-content: space-between;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+.logo{
+  display: flex;
+}
+.tooltip >img{
+  border-radius: 50%;
+  margin: 20px 0 20px 50px;
+  border: 2px #3E32E4 dotted;
+}
+.tooltip >p{
+  margin: 25px 0 0 10px;
+  font-family: monospace;
+}
+.prof{
+  color: #3E32E4;
+}
+#nav-link{
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 10px;
+  margin-right: 70px;
+  text-align: center;
+}
+#nav-link > ul{
+  display: flex;
+}
+
+@media screen and (max-width: 720px){
+  #nav-link > ul{
+    display: block;
+  }
+}
+@media screen and (max-width:460px) {
+  .tooltip >img{
+    margin: 20px 0 0 20px;
+  }
+  .tooltip > p{
+    display: none;
+    margin-top: 0;
+  }
+  #nav-link > ul{
+    display: flex;
+  }
+}
+.nav-link{
+  padding-left: 15px;
+}
+.nav-link:hover{
+  font-weight: bold;
+}
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #19192A;
+  color: #576180;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when the mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+#main-doc{
+  margin-top: 60px;
+}
+
+/*the wlcome section style*/
+#welcome-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.about{
+  width: 65%;
+}
+.about >p{
+  font-size: 2.8rem;
+  margin: 0 0 0 0;
+}
+.about > h1{
+  font-size: 4.5rem;
+  margin: 0 0 0 0;
+  padding-bottom: 10px;
+}
+.about span{
+  color: #3E32E4;
+}
+
+@media screen and (max-width:720px) {
+  .about >p{
+    font-size: 2rem;
+  }
+  .about > h1{
+    font-size: 3rem;
+  }
+}
+
+/*The projects section*/
+#projects{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10rem 2rem;
+
+}
+#projects > h1{
+  max-width: 640px;
+  margin: 0 auto 6rem auto;
+  border-bottom: 0.2rem solid #3E32E4;
+}
+.projects-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 2.5rem;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 6rem;
+}
+.project-item{
+  margin: 0 auto;
+  background-color: #18191f;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: box-shadow 1s ease;
+}
+@media screen and (max-width:460px) {
+  .projects-grid{
+    grid-template-columns: 1fr;
+  }
+  .project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+  }
+  
+}
+.project-item:hover{
+  box-shadow: 4px 8px 8px #3E32E4;
+}
+.project-item img{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 100%;
+  display: block;
+}
+.project-tile{
+  background-color: #18191f;
+  padding: 10px;
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: #576180;
+}
+.schl{
+  background-color: #18191f;
+  padding: 0 10px 5px 10px;
+  color: #1E90FF;
+}
+.code{
+  background-color: #18191f;
+  color: #18191f;
+  transition: color 3s ease;
+}
+.project-item:hover .code{
+  color: #F44336;
+  transition: color 3s ease;
+  font-weight: bold;
+}
+.project-item:hover .schl{
+  color: #3E32E4;
+}
+.show{
+  font-size: 1.3rem;
+  background-color: #3E32E4;
+  padding: 10px;
+  border-radius: 6px;
+}
+.show:hover{
+  background-color: #6E65F1;
+}
+
+
+/* The contact section*/
+#contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#contact h1{
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+#contact h3{
+  font-size: 1.4rem;
+}
+.contact-me{
+  width: 270px;
+  text-align: center;
+  font-size: 1.3rem;
+  border-radius: 6px;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+  padding: 10px;
+  background-color: #3E32E4;
+}
+.contact-me:hover{
+  background-color: #6E65F1;
+}
+#networking{
+  margin-bottom: 1.5rem;
+}
+#networking img{
+  background-color: #151616;
+  margin-left: 10px;
+  border-radius: 50%;
+  transition: background-color 1s ease;
+}
+#networking img:hover{
+  background-color: #22242b;
+  transition: background-color 1s ease;
+}
+.top > img{
+  padding: 5px;
+  background-color: #3E32E4;
+  border-radius: 50%;
+  width: 100%;
+  position: fixed;
+  bottom: 10vh;
+  right: 20px;
+  visibility: hidden;
+}
+#projects:hover .top >img{
+  visibility: visible;
+}
+#contact:hover .top >img{
+  visibility: visible;
+}
+
+/*Custom the scrollbar*/
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #3E32E4;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #3225e7;
+}
