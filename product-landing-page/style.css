@@ -1,0 +1,307 @@
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0 auto;
+  min-height: 75px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #387aeb;
+  background-color: #dafbff;
+  border-bottom: solid 1px #387aeb;
+  padding: 0 20px 10px;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-wrap: wrap;
+  }
+}
+
+.logo {
+  width: 60vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media (max-width: 650px) {
+  .logo {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.logo > img {
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 20px;
+}
+
+.logo > h1 {
+  text-align: left;
+}
+
+@media (max-width: 650px) {
+  .logo > h1 {
+    text-align: center;
+  }
+}
+
+nav {
+  font-weight: 400;
+}
+
+.nav-link {
+  text-decoration: none;
+  margin: 5px;
+  font-size: 18px;
+  color: #387aeb;
+}
+
+.nav-link:hover {
+  color: #075df3;
+  font-weight: bold;
+}
+
+@media (max-width: 650px) {
+  nav {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+    margin: 2px;
+  }
+  nav li {
+    padding-bottom: 5px;
+  }
+}
+
+@media (max-width: 650px) {
+  .logo > img {
+    margin: 0 auto;
+  }
+}
+
+#header-img {
+  width: 10%;
+}
+
+#sec-form {
+  margin-top: 100px;
+}
+
+@media (max-width: 650px) {
+  #sec-form {
+    margin-top: 225px;
+  }
+
+  @media (max-width: 650px) {
+    #sec-form > h3 {
+      font-size: 18px;
+    }
+  }
+}
+
+#container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#form {
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#email {
+  padding: 8px;
+  width: 40%;
+}
+
+#email:active {
+  border-bottom: 1px solid #387aeb;
+}
+
+.btn-submit {
+  padding: 8px;
+  width: 20%;
+  margin-top: 15px;
+  background-color: #387aeb;
+  border: none;
+  border-radius: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  font-weight: normal;
+}
+
+@media (max-width: 650px) {
+  #email {
+    width: 80%;
+  }
+
+  .btn-submit {
+    width: 50%;
+    font-size: 16px;
+  }
+}
+
+.btn-submit:hover {
+  background-color: #1664ec;
+}
+
+#features {
+  padding-top: 10px;
+  margin: 15px;
+}
+
+.img-item {
+  width: 75px;
+  margin-bottom: 30px;
+}
+
+.item-1 {
+  width: 60%;
+  margin: 0 auto;
+  padding: 5px 10px 5px 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 650px) {
+  .item-1 {
+    width: 90%;
+    padding: 5px;
+  }
+
+  .img-item {
+    width: 0px;
+    margin-bottom: 30px;
+  }
+}
+
+.paragraph-des {
+  width: 60%;
+  margin: 0 auto;
+  padding: 5px 10px 5px 10px;
+}
+
+@media (max-width: 650px) {
+  .paragraph-des {
+    width: 90%;
+    padding: 2px;
+    font-size: 18px;
+  }
+}
+
+#pricing {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media (max-width: 720px) {
+  #pricing {
+    flex-direction: column;
+  }
+}
+
+.headset-item {
+  border: 1px solid gray;
+  border-radius: 4px;
+  width: auto;
+  height: auto;
+  margin-top: 20px;
+}
+
+h2 {
+  background-color: #dafbff;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+.headset {
+  max-width: 100%;
+}
+
+.select-item {
+  background-color: #387aeb;
+  width: 45%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 7px 0 7px 0;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.select-item:hover {
+  background-color: #035df8;
+  color: #dafbff;
+  width: 46%;
+}
+
+footer {
+  background-color: #dafbff;
+  height: 75px;
+  margin-top: 30px;
+}
+
+p > a {
+  font-size: 18px;
+  padding: 10px;
+  margin-top: 15px;
+  text-decoration: none;
+  position: relative;
+  top: 25px;
+}
+
+#copy {
+  position: relative;
+  top: 25px;
+  float: left;
+  margin-left: 15px;
+}
+
+iframe{
+  overflow-x: auto;
+}
